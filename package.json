@@ -16,7 +16,7 @@
     "vue",
     "vue-multi-page"
   ],
-  "dependencies ": {
+  "dependencies": {
     "core-js": "^3.6.5",
     "diff-match-patch": "^1.0.5",
     "untyper": "^0.0.2",
