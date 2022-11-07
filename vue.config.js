@@ -62,20 +62,22 @@ module.exports = {
     config.plugins.delete('preload-page2')
     config.plugins.delete('prefetch-page2')
   },
-  configureWebpack: {
-    externals: {
-      'vue': 'Vue',
-      'vue-router': 'VueRouter',
-    },
+  configureWebpack:  {
+    // externals: {
+    //   'vue': 'Vue',
+    //   'vue-router': 'VueRouter',
+    // },
     plugins:[
       new CleanWebpackPlugin({
         dry: true
       })
     ],
     output: {
-      // filename: "[name].[contenthash].bundle.js",
-      // path: buildPath,
-      devtoolModuleFilenameTemplate: "webpack://vue2/[resource-path]"
-    }
+    //   // filename: "[name].[contenthash].bundle.js",
+    //   // path: buildPath,
+      devtoolModuleFilenameTemplate: "什么意思://[resource-path]"
+    },
+    devtool: 'source-map'
+    //
   }
 }
