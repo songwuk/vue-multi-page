@@ -3,7 +3,13 @@
     <router-view></router-view>
   </div>
 </template>
-
+<script>
+export default {
+  mounted() {
+    console.log(1)
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
